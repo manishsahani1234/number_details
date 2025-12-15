@@ -1,1 +1,105 @@
+.App {
+  text-align: center;
+}
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* :root {
+  --footer-bg: #f8f9fa;
+  --footer-text: #212529;
+  --footer-accent: #00b4db;
+  --footer-social-bg: rgba(0, 0, 0, 0.05);
+  --footer-border: rgba(0, 0, 0, 0.1);
+  --primary: #2563EB;
+  --background: #FFFFFF;
+  --text: #4B5563;
+}
+
+body.dark-mode {
+  --footer-bg: linear-gradient(135deg, #2b2d42, #1e1e30);
+  --footer-text: #f8f9fa;
+  --footer-accent: #00b4db;
+  --footer-social-bg: rgba(255, 255, 255, 0.08);
+  --footer-border: rgba(255, 255, 255, 0.1);
+  --primary: #3B82F6;
+  --background: #1F2937;
+  --text: #F3F4F6;
+} */
+
+.glass-light {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* App.css */
+.light-mode {
+  --bg-color: #F9FAFB;
+  --text-color: #111827;
+  --surface-color: #FFFFFF;
+  --primary: #2A63F2;
+  --secondary: #15C39A;
+  --accent: #FACC15;
+  --danger: #EF4444;
+}
+
+.dark-mode {
+  --bg-color: #0F172A;
+  --text-color: #F8FAFC;
+  --surface-color: #1E293B;
+  --primary: #3B82F6;
+  --secondary: #22D3EE;
+  --accent: #FDE68A;
+  --danger: #F87171;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
